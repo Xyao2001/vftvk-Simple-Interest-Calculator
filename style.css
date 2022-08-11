@@ -3,8 +3,10 @@ h1{color:grey;font-family:verdana}
 .maindiv {
     background-color:WHITE;
     color:black;
-    width:300px
+    width:300
+    display: inline-block;
     padding:20px
+    border: 2px white;
     border-radius: 25px;
     text-align: center;
 
@@ -14,3 +16,4 @@ h1{color:grey;font-family:verdana}
 .highlight {
   background-color: yellow;
 }
+
