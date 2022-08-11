@@ -4,7 +4,7 @@ function compute()
 {
     var principal =document.getElementById("principal").value;
     /* Validation for "Principal" input box*/
-    if(parseInt(principal) <= 0){
+    if(parseInt(principal) <= 0 || principal==""){
       alert("Enter a positive number");
       document.getElementById("principal").focus();
     }
@@ -17,8 +17,10 @@ function compute()
 
         /*return the result in inner html*/
         document.getElementById("interest").innerText= interest;
-        document.getElementById("result").innerText="if you deposit " +principal +" at an interest rate of "+rate +"%"+
-        " you will receive an amount of "+ " " + interest+" in the year" +" "+year;
+        document.getElementById("result").innerText="if you deposit " +principal;
+        document.getElementById("result1").innerText=" at an interest rate of "+rate +"%";
+        document.getElementById("result2").innerText="you will receive an amount of "+ "" + interest;
+        document.getElementById("result3").innerText=" in the year" +" "+year;
       }
 
 }
