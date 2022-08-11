@@ -16,6 +16,7 @@ function compute()
         var total_amount=parseInt(principal)+parseInt(interest);
 
         /*return the result in inner html*/
+        document.getElementById("interest").innerText= interest;
         document.getElementById("result").innerText="if you deposit " +principal +" at an interest rate of "+rate +"%"+
         " you will receive an amount of "+ " " + interest+" in the year" +" "+year;
       }
